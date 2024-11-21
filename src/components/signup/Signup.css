@@ -1,0 +1,69 @@
+.form-container {
+   
+    border: 1px solid #dcdcdc; 
+    padding: 4rem 6rem; 
+    border-radius: 1.5rem;
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;  
+    margin: 0 auto;  
+    
+   
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.85), rgba(230, 230, 230, 0.85));  
+    background-color: #f9f9f9;  
+    
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);  
+    
+    transition: all 0.3s ease-in-out;  
+}
+
+
+.form-container:hover {
+    transform: translateY(-5px);  
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);  
+}
+
+
+
+
+.button {
+
+
+
+    margin-top: 2rem;
+    width: 100px;
+    /* Set button width */
+    height: 35px;
+    /* Adjust height for better proportion */
+    background-color: rgb(64, 37, 101);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+/* .ant-form-item-label {
+    font-family: sans-serif;
+    font-weight: bold;
+} */
+
+.ant-form-item-explain {
+    /* font-weight: bold; */
+    color: red;
+    /* Optional: Make error messages red */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 2rem 3rem;  /* Reduce padding on smaller screens */
+        max-width: 90%;  /* Allow form to take more width on mobile */
+    }
+}

@@ -1,0 +1,87 @@
+.input {
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;  /* Set a default font size */
+    padding: 10px;
+    width: 250px;  /* Fixed width for larger screens */
+}
+
+.button {
+    margin-top: 2rem;
+    width: 200px;  /* Fixed button width */
+    height: 50px;  /* Adjust height for better proportion */
+    background-color: rgb(64, 37, 101);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;  /* Smooth transition */
+    font-size: 1rem;  /* Default button font size */
+}
+
+/* Button Hover State */
+.button:hover {
+    background-color: rgb(48, 190, 150);  /* Change color on hover */
+    transform: translateY(-2px);  /* Subtle lift effect on hover */
+}
+
+/* Button Active State */
+.button:active {
+    background-color: rgb(32, 128, 95);  /* Darker color when button is pressed */
+    transform: translateY(0);  /* Remove lift effect on click */
+}
+
+.body {
+    background-image: linear-gradient(135deg, rgb(64, 37, 101), rgb(48, 190, 150));
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);  /* Dynamic font size */
+    color: white;
+    padding: 0 20px;  /* Add some padding to prevent elements from touching the edges */
+}
+
+input,
+button {
+    font-family: Arial, sans-serif;
+}
+
+input:focus,
+button:focus {
+    outline: none;  /* Remove default focus outline */
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets or medium screens (min-width: 600px) */
+@media (max-width: 768px) {
+    .input {
+        width: 80%;  /* Make the input fields responsive */
+    }
+
+    .button {
+        width: 80%;  /* Adjust button width for better alignment on small screens */
+    }
+
+    .body {
+        font-size: calc(10px + 3vmin);  /* Increase font size on medium screens */
+    }
+}
+
+/* For mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .input {
+        width: 100%;  /* Make inputs full-width on small screens */
+    }
+
+    .button {
+        width: 100%;  /* Make button full-width on small screens */
+        height: 45px;  /* Adjust button height to fit better on mobile */
+    }
+
+    .body {
+        font-size: calc(10px + 4vmin);  /* Further increase font size for mobile */
+    }
+}
